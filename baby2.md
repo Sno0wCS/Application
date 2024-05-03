@@ -1,6 +1,6 @@
 # Baby2
 
-![[baby2-logo.png]]
+![](https://1897091482-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FI3I73FFqB6GvT8N5Mt1N%2Fuploads%2Ffx0klU9eMsBb0FONMNSQ%2Fbaby2_slide.png?alt=media&token=cdda49ad-1b0c-46b7-85db-8d6af3fb3862)
 
 | Name  | OS      | Difficulty | Creator     |
 | ----- | ------- | ---------- | ----------- |
