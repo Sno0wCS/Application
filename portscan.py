@@ -16,6 +16,7 @@ def tcp_scan(target: str, port: int):
             
             g_port_results.append({port: True})
             try:
+                s.send(b'GET / HTTP/1.0\r\n\r\n')
                 banner = s.recv(1024)
                 g_banners.append({port: banner})
             except Exception as e:
@@ -51,12 +52,11 @@ def print_result():
     for result in g_port_results:
         for port in result:
             if result[port] == True:
-                print(f"Port: {port} is Open!")
+                print(f"[+] Port: {port} is Open!")
                 for banner in g_banners:
                     if port == list(banner.keys())[0]:
                         if banner[port].decode() != "none":
-                            print(f"Port: {port}, Banner: {banner[port].decode()}")
-
+                            print(f"[*] Port: {port}, Banner: \n{banner[port].decode().split("\r\n\r\n")[0]}\n")
 
 def main():
     parser = argparse.ArgumentParser(usage="python3 portscan.py <target> <port/s> # use 80,8080,443 to threaded_scan multiple ports")
