@@ -1,6 +1,6 @@
 # Baby2
 
-![[Pasted image 20240502233830.png]]
+![[baby2-logo.png]]
 
 | Name  | OS      | Difficulty | Creator     |
 | ----- | ------- | ---------- | ----------- |
